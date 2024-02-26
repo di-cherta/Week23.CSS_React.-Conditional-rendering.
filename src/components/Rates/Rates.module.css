@@ -1,0 +1,10 @@
+.wrapper{
+    width: 1050px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 242, 242);
+    margin: 15vh;
+}
