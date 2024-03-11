@@ -1,18 +1,25 @@
 import React from "react";
 import Styles from "./Card.module.css";
 import Cn from "classnames";
+import { useState } from "react";
 
 function Card(props) {
+    const [selected, setSelected] = useState(false);
+    const handleSelectedState = () => {
+        setSelected(!selected)
+    }
+
     const {colorHeader, colorPrice, success} = props;
     const header = Cn(Styles[colorHeader], Styles.headers);
     const price = Cn(Styles[colorPrice], Styles.prices);
     const colorSpeed = Cn(Styles.speed);
     const colorFooter = Cn(Styles.footer);
-    const label = Cn(Styles.label, {[Styles.success]:success});
+    const label = Cn(Styles.label, {[Styles.success]:success}, {[Styles.selected]:selected});
     const sizePrice = Cn(Styles.sizePrice)
 
+
     return (
-    <div className={label}>
+    <div className={label} onClick={handleSelectedState}>
         <header className={header}>
             <h3>Безлимитный {props.value}</h3>
         </header>

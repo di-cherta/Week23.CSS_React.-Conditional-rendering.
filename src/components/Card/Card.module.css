@@ -8,7 +8,9 @@
     flex-wrap: nowrap;
     align-items: center;
     color: white;
-    margin: 1px;
+    margin: 2px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 .headers{
     font-size: 1.1vw;
@@ -26,7 +28,7 @@
 }
 .blue-header{
     background-color: rgb(57, 137, 186);
-    border: 1px solid white;
+    border-bottom: 1px solid white;
     margin: 0px;
 }
 .blue-price{
@@ -36,7 +38,7 @@
 
 .green-header{
     background-color: rgb(45, 141, 104);
-    border: 1px solid white;
+    border-bottom: 1px solid white;
     margin: 0px;
 }
 .green-price{
@@ -46,7 +48,7 @@
 
 .red-header{
     background-color: rgb(194, 64, 55);
-    border: 1px solid white;
+    border-bottom: 1px solid white;
     margin: 0px;
 }
 .red-price{
@@ -56,11 +58,11 @@
 
 .black-header{
     background-color: rgba(24, 24, 24, 0.918);
-    border: 1px solid white;
+    border-bottom: 1px solid white;
     margin: 0px;
 }
 .black-price{
-    background-color: rgba(35, 35, 35, 0.848);
+    background-color: rgb(55, 54, 54);
     margin: 0px;
 }
 
@@ -91,7 +93,14 @@
 .success{
     transition: 0.5s;
     &:hover{
+        cursor: pointer;
         transform: scale(1.1);
         box-shadow: 1px 10px 20px 5px rgba(120, 114, 114, 0.2);
     }
+}
+.selected{
+    border: 2px solid rgb(111, 120, 108);
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 1px 10px 20px 5px rgba(120, 114, 114, 0.2);
 }
