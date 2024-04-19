@@ -14,7 +14,7 @@ function Card(props) {
     const price = Cn(Styles[colorPrice], Styles.prices);
     const colorSpeed = Cn(Styles.speed);
     const colorFooter = Cn(Styles.footer);
-    const label = Cn(Styles.label, {[Styles.success]:success}, {[Styles.selected]:selected});
+    const label = Cn(Styles.label, {[Styles.success]:success}); //{[Styles.selected]:selected}
     const sizePrice = Cn(Styles.sizePrice)
 
 
