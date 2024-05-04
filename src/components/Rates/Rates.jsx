@@ -23,7 +23,6 @@ function Rates (){
             speed: '100',
             colorHeader: 'red-header',
             colorPrice: 'red-price',
-            success: 'success'
         },
         {
             value: '1000',
@@ -35,7 +34,7 @@ function Rates (){
     return(
         <div className={ratesWrapper}>
             {date.map((item, index) =>{
-                return <Card key={index} value={item.value} speed={item.speed} colorHeader={item.colorHeader} colorPrice={item.colorPrice} success={item.success}/>
+                return <Card key={index} value={item.value} speed={item.speed} colorHeader={item.colorHeader} colorPrice={item.colorPrice}/>
             })}
         </div>
     );
